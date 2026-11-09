@@ -1931,3 +1931,224 @@ button,
         animation: none;
     }
 }
+
+/* =================================
+   PREMIUM GOLDEN AURORA BACKGROUND
+================================= */
+
+body {
+    background: #050505;
+}
+
+/* Background Glow Layers */
+
+/* PREMIUM ANIMATED GOLDEN AURORA */
+
+.background-glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 0;
+    will-change: transform;
+}
+
+.glow-one {
+    top: -200px;
+    left: -200px;
+    background: radial-gradient(
+        circle,
+        rgba(255, 190, 35, 0.9),
+        rgba(212, 175, 55, 0.25) 45%,
+        transparent 70%
+    );
+    animation: goldenAurora 9s ease-in-out infinite alternate;
+}
+
+.glow-two {
+    bottom: -250px;
+    right: -200px;
+    background: radial-gradient(
+        circle,
+        rgba(190, 120, 20, 0.85),
+        rgba(212, 175, 55, 0.2) 45%,
+        transparent 70%
+    );
+    animation: goldenAurora 12s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes goldenAurora {
+    0% {
+        transform: translate(0, 0) scale(0.85);
+    }
+
+    50% {
+        transform: translate(180px, 100px) scale(1.2);
+    }
+
+    100% {
+        transform: translate(80px, -100px) scale(0.95);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glow-one,
+    .glow-two {
+        animation: none;
+    }
+}
+
+/* Keep Website Content Above Background */
+body > *:not(.background-glow) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .glow-one,
+    .glow-two {
+        animation: none;
+    }
+}
+
+/* ===================================
+   PREMIUM FLOATING GOLDEN PARTICLES
+=================================== */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background-image:
+        radial-gradient(circle, rgba(255, 220, 120, 1) 1.5px, transparent 3px),
+        radial-gradient(circle, rgba(255, 190, 50, 0.9) 1px, transparent 2.5px),
+        radial-gradient(circle, rgba(255, 235, 170, 0.8) 2px, transparent 4px),
+        radial-gradient(circle, rgba(212, 175, 55, 0.9) 1px, transparent 3px);
+
+    background-size:
+        130px 130px,
+        190px 190px,
+        270px 270px,
+        350px 350px;
+
+    background-position:
+        0 0,
+        50px 80px,
+        100px 30px,
+        30px 150px;
+
+    opacity: 0.75;
+    filter: drop-shadow(0 0 5px rgba(255, 195, 50, 0.9));
+
+    animation:
+        particleMove 25s linear infinite,
+        particleTwinkle 3s ease-in-out infinite alternate;
+}
+
+/* Floating Movement */
+@keyframes particleMove {
+    0% {
+        background-position:
+            0 0,
+            50px 80px,
+            100px 30px,
+            30px 150px;
+    }
+
+    100% {
+        background-position:
+            0 -500px,
+            250px -300px,
+            -200px -450px,
+            350px -250px;
+    }
+}
+
+/* Twinkling Glow */
+@keyframes particleTwinkle {
+    0% {
+        opacity: 0.35;
+    }
+
+    100% {
+        opacity: 0.85;
+    }
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    body::after {
+        opacity: 0.45;
+        filter: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body::after {
+        animation: none;
+    }
+}
+
+/* =================================
+   GLOBAL PREMIUM GOLD DOT ANIMATION
+================================= */
+
+body {
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.38;
+
+    background-image:
+        radial-gradient(circle, rgba(255, 215, 80, 0.9) 1.2px, transparent 2px),
+        radial-gradient(circle, rgba(212, 175, 55, 0.7) 1px, transparent 2px),
+        radial-gradient(circle, rgba(255, 230, 140, 0.55) 1.5px, transparent 3px);
+
+    background-size:
+        150px 150px,
+        230px 230px,
+        310px 310px;
+
+    background-position:
+        0 0,
+        60px 80px,
+        120px 40px;
+
+    animation: globalGoldParticles 18s linear infinite;
+}
+
+@keyframes globalGoldParticles {
+    0% {
+        background-position:
+            0 0,
+            60px 80px,
+            120px 40px;
+    }
+
+    50% {
+        background-position:
+            40px 70px,
+            100px 20px,
+            60px 100px;
+    }
+
+    100% {
+        background-position:
+            0 0,
+            60px 80px,
+            120px 40px;
+    }
+}
