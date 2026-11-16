@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates | FM NABIL</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    </head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a href="index.html" class="animated-brand">
+            FARHAN MUHIB NABIL
+        </a>
+
+
+<nav class="nav-links" id="navMenu">
+
+    <a href="index.html">
+        <i class="fa-solid fa-gauge-high"></i>
+        <span>Dashboard</span>
+    </a>
+
+    <a href="about.html">
+        <i class="fa-solid fa-user"></i>
+        <span>About</span>
+    </a>
+
+    <a href="education.html">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Education</span>
+    </a>
+
+    <a href="skills.html" class="active">
+        <i class="fa-solid fa-code"></i>
+        <span>Skills</span>
+    </a>
+
+    <a href="projects.html">
+        <i class="fa-solid fa-laptop-code"></i>
+        <span>Projects</span>
+    </a>
+
+    <a href="achievements.html">
+        <i class="fa-solid fa-trophy"></i>
+        <span>Achievements</span>
+    </a>
+
+    <a href="portfolio.html">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Portfolio</span>
+    </a>
+
+    <a href="certificates.html">
+        <i class="fa-solid fa-certificate"></i>
+        <span>Certificates</span>
+    </a>
+
+    <a href="contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+    </a>
+
+</nav>
+
+        <a href="contact.html" class="nav-button">Let's Talk</a>
+
+    </div>
+</header>
+
+
+<main class="certificates-page">
+
+    <section class="certificate-section">
+
+        <div class="certificate-header">
+
+            <span class="section-tag">MY ACHIEVEMENTS</span>
+
+            <h2>My <span>Certificates</span></h2>
+
+            <p>
+                My achievements, skills and learning journey.
+            </p>
+
+        </div>
+
+
+        <div class="certificate-slider">
+
+            <button class="cert-btn prev" id="certPrev">
+                &#10094;
+            </button>
+
+            <div class="certificate-track" id="certificateTrack">
+
+                <div class="certificate-card">
+
+                    <img src="assets/Certificate - 1.jpg"
+                        alt="AI and Cyber Security Certificate"
+                        loading="lazy"
+                        onclick="openCertificate(this.src)">
+
+                    <div class="certificate-info">
+
+                        <span class="cert-category">
+                            CYBER SECURITY
+                        </span>
+
+                        <h3>AI & Cyber Security Essentials</h3>
+
+                        <p class="cert-organization">
+                            National Cyber Security Agency
+                        </p>
+
+                        <div class="cert-meta">
+                            <span>10 May 2026</span>
+                            <span>Certificate 01</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <img src="assets/Certificate - 2.jpg"
+                        alt="Certificate 2"
+                        loading="lazy"
+                        onclick="openCertificate(this.src)">
+
+                    <div class="certificate-info">
+
+                        <span class="cert-category">
+                            CYBER SECURITY
+                        </span>
+
+                        <h3>AI & Cyber Security Essentials</h3>
+
+                        <p class="cert-organization">
+                            National Cyber Security Agency
+                        </p>
+
+                        <div class="cert-meta">
+                            <span>11 May 2026</span>
+                            <span>Certificate 02</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <img src="assets/Certificate - 3.jpg"
+                        alt="Certificate 3"
+                        loading="lazy"
+                        onclick="openCertificate(this.src)">
+
+                    <div class="certificate-info">
+
+                        <span class="cert-category">
+                            CYBER SECURITY
+                        </span>
+
+                        <h3>AI & Cyber Security Essentials</h3>
+
+                        <p class="cert-organization">
+                            National Cyber Security Agency
+                        </p>
+
+                        <div class="cert-meta">
+                            <span>10 May 2026</span>
+                            <span>Certificate 03</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="cert-btn next" id="certNext">
+                &#10095;
+            </button>
+
+        </div>
+
+        <div class="certificate-dots" id="certificateDots"></div>
+
+    </section>
+
+</main>
+
+
+<!-- FULL SIZE CERTIFICATE PREVIEW -->
+
+<div class="certificate-modal" id="certificateModal">
+
+    <div class="certificate-preview-content">
+
+        <button class="modal-close" id="certificateClose">
+            &times;
+        </button>
+
+        <img id="fullCertificate"
+            src=""
+            alt="Full Certificate">
+
+        <a id="downloadCertificate"
+            class="cert-download"
+            href="#"
+            download="NABIL-Certificate.jpg">
+            &#8595; Download Certificate
+        </a>
+
+    </div>
+
+</div>
+
+<footer class="contact-footer">
+        <p>© 2026 FM NABIL. All Rights Reserved.</p>
+    </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | FM NABIL</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a href="index.html" class="animated-brand">
+            FARHAN MUHIB NABIL
+        </a>
+
+
+<nav class="nav-links" id="navMenu">
+
+    <a href="index.html">
+        <i class="fa-solid fa-gauge-high"></i>
+        <span>Dashboard</span>
+    </a>
+
+    <a href="about.html">
+        <i class="fa-solid fa-user"></i>
+        <span>About</span>
+    </a>
+
+    <a href="education.html">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Education</span>
+    </a>
+
+    <a href="skills.html" class="active">
+        <i class="fa-solid fa-code"></i>
+        <span>Skills</span>
+    </a>
+
+    <a href="projects.html">
+        <i class="fa-solid fa-laptop-code"></i>
+        <span>Projects</span>
+    </a>
+
+    <a href="achievements.html">
+        <i class="fa-solid fa-trophy"></i>
+        <span>Achievements</span>
+    </a>
+
+    <a href="portfolio.html">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Portfolio</span>
+    </a>
+
+    <a href="certificates.html">
+        <i class="fa-solid fa-certificate"></i>
+        <span>Certificates</span>
+    </a>
+
+    <a href="contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+    </a>
+
+</nav>
+
+        <a href="contact.html" class="nav-button">
+            Let's Talk
+        </a>
+
+    </div>
+</header>
+
+
+<!-- PORTFOLIO PAGE -->
+
+<main class="portfolio-page">
+
+
+    <!-- HERO SECTION -->
+
+    <section class="portfolio-page-hero">
+
+        <span class="portfolio-page-badge">
+            <i class="fas fa-layer-group"></i>
+            MY PORTFOLIO
+        </span>
+
+        <h1>
+            My Creative <span>Portfolio</span>
+        </h1>
+
+        <p>
+            Explore my work, creative ideas,
+            document designs and digital projects.
+        </p>
+
+    </section>
+
+
+    <!-- INTRO SECTION -->
+
+    <section class="portfolio-page-intro">
+
+        <div>
+            <span>01 / WORK COLLECTION</span>
+
+            <h2>Explore My Work</h2>
+
+            <p>
+                A collection of my practice work,
+                document formatting and creative experiences.
+            </p>
+        </div>
+
+        <div class="portfolio-total">
+            <i class="fas fa-folder-open"></i>
+            <span>06 Projects</span>
+        </div>
+
+    </section>
+
+
+    <!-- PORTFOLIO SHOWCASE -->
+
+    <section class="portfolio-showcase">
+
+
+        <!-- STATISTICS -->
+
+        <div class="portfolio-stats">
+
+            <div class="stat-card">
+                <h3>06</h3>
+                <p>Practice Projects</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>03</h3>
+                <p>Project Categories</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>05+</h3>
+                <p>Tools & Technologies</p>
+            </div>
+
+        </div>
+
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="portfolio-filter-buttons">
+
+            <button class="portfolio-filter filter-btn active"
+                data-filter="all">
+                All Work
+            </button>
+
+            <button class="portfolio-filter filter-btn"
+                data-filter="documents">
+                Documents
+            </button>
+
+            <button class="portfolio-filter filter-btn"
+                data-filter="design">
+                Design
+            </button>
+
+            <button class="portfolio-filter filter-btn"
+                data-filter="web">
+                Web
+            </button>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="portfolio-search">
+
+            <input
+                type="search"
+                id="portfolioSearch"
+                placeholder="Search projects..."
+                aria-label="Search portfolio projects"
+            >
+
+            <span class="search-icon">
+                <i class="fas fa-search"></i>
+            </span>
+
+        </div>
+
+
+        <!-- PROJECT GRID -->
+
+        <div class="portfolio-showcase-grid">
+
+
+            <!-- PROJECT 01 - WORD -->
+
+            <article class="portfolio-showcase-card portfolio-card reveal"
+                data-category="documents"
+                data-project="word">
+
+                <div class="portfolio-showcase-preview portfolio-image">
+
+                    <img
+                        src="assets/portfolio/word/word-preview.png"
+                        alt="Professional Word Document Sample"
+                        loading="lazy"
+                    >
+
+                    <span>DOCUMENT FORMATTING</span>
+
+                </div>
+
+                <div class="portfolio-showcase-content portfolio-content">
+
+                    <span class="practice-label">
+                        SELF-CREATED PRACTICE PROJECT
+                    </span>
+
+                    <span class="project-category">
+                        MS WORD
+                    </span>
+
+                    <h3>Professional Document Formatting</h3>
+
+                    <p>
+                        Practice project featuring professional
+                        document layout, headings, tables and
+                        page formatting.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>MS Word</span>
+                        <span>PDF</span>
+                        <span>Document Design</span>
+                    </div>
+
+                    <div class="portfolio-buttons">
+
+                        <a href="assets/portfolio/word/word-sample.pdf"
+                            target="_blank"
+                            rel="noopener">
+                            View PDF
+                        </a>
+
+                        <a href="assets/portfolio/word/word-sample.docx"
+                            download>
+                            Download DOCX
+                        </a>
+
+                        <button class="details-btn"
+                            onclick="showProjectDetails('word')">
+                            Project Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PROJECT 02 - EXCEL -->
+
+            <article class="portfolio-showcase-card portfolio-card reveal"
+                data-category="documents"
+                data-project="excel">
+
+                <div class="portfolio-showcase-preview portfolio-image">
+
+                    <img
+                        src="assets/portfolio/excel/excel-preview.png"
+                        alt="Excel Dashboard Sample"
+                        loading="lazy"
+                    >
+
+                    <span>DATA & DASHBOARD</span>
+
+                </div>
+
+                <div class="portfolio-showcase-content portfolio-content">
+
+                    <span class="practice-label">
+                        SELF-CREATED PRACTICE PROJECT
+                    </span>
+
+                    <span class="project-category">
+                        MS EXCEL
+                    </span>
+
+                    <h3>Excel Data Entry & Dashboard</h3>
+
+                    <p>
+                        Practice sales report with formulas,
+                        automatic calculations and a
+                        visual dashboard.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>MS Excel</span>
+                        <span>Data Entry</span>
+                        <span>Dashboard</span>
+                    </div>
+
+                    <div class="portfolio-buttons">
+
+                        <a href="assets/portfolio/excel/excel-dashboard.pdf"
+                            target="_blank"
+                            rel="noopener">
+                            View PDF
+                        </a>
+
+                        <a href="assets/portfolio/excel/excel-sample.xlsx"
+                            download>
+                            Download XLSX
+                        </a>
+
+                        <button class="details-btn"
+                            onclick="showProjectDetails('excel')">
+                            Project Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PROJECT 03 - MCQ -->
+
+            <article class="portfolio-showcase-card portfolio-card reveal"
+                data-category="documents"
+                data-project="mcq">
+
+                <div class="portfolio-showcase-preview portfolio-image">
+
+                    <img
+                        src="assets/portfolio/mcq/mcq-preview.png"
+                        alt="MCQ Question Paper Sample"
+                        loading="lazy"
+                    >
+
+                    <span>MCQ FORMATTING</span>
+
+                </div>
+
+                <div class="portfolio-showcase-content portfolio-content">
+
+                    <span class="practice-label">
+                        SELF-CREATED PRACTICE PROJECT
+                    </span>
+
+                    <span class="project-category">
+                        DOCUMENT DESIGN
+                    </span>
+
+                    <h3>MCQ Question Paper Formatting</h3>
+
+                    <p>
+                        Practice examination paper with
+                        formatted questions, four options
+                        and a separate answer key.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>MS Word</span>
+                        <span>MCQ Formatting</span>
+                        <span>PDF</span>
+                    </div>
+
+                    <div class="portfolio-buttons">
+
+                        <a href="assets/portfolio/mcq/mcq-sample.pdf"
+                            target="_blank"
+                            rel="noopener">
+                            View PDF
+                        </a>
+
+                        <a href="assets/portfolio/mcq/mcq-sample.docx"
+                            download>
+                            Download DOCX
+                        </a>
+
+                        <button class="details-btn"
+                            onclick="showProjectDetails('mcq')">
+                            Project Details
+                        </button>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PROJECT 04 - WEBSITE -->
+
+            <article class="portfolio-showcase-card portfolio-card reveal"
+                data-category="web"
+                data-project="website">
+
+                <div class="portfolio-showcase-preview">
+
+                    <i class="fas fa-globe"></i>
+
+                    <span>WEB DEVELOPMENT</span>
+
+                </div>
+
+                <div class="portfolio-showcase-content">
+
+                    <span class="project-category">
+                        WEB PROJECT
+                    </span>
+
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A responsive personal website
+                        with a premium black and gold theme,
+                        animations and modern layout.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PROJECT 05 - ID CARD -->
+
+            <article class="portfolio-showcase-card portfolio-card reveal"
+                data-category="design"
+                data-project="id-card">
+
+                <div class="portfolio-showcase-preview">
+
+                    <i class="fas fa-id-card"></i>
+
+                    <span>GRAPHIC DESIGN</span>
+
+                </div>
+
+                <div class="portfolio-showcase-content">
+
+                    <span class="project-category">
+                        DESIGN PROJECT
+                    </span>
+
+                    <h3>Professional ID Card</h3>
+
+                    <p>
+                        A modern identity card design
+                        with a premium black and gold
+                        visual style.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Creative Design</span>
+                        <span>Branding</span>
+                        <span>Layout</span>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PROJECT 06 - GAMING -->
+
+            <article class="portfolio-showcase-card portfolio-card reveal"
+                data-category="design"
+                data-project="gaming">
+
+                <div class="portfolio-showcase-preview">
+
+                    <i class="fas fa-gamepad"></i>
+
+                    <span>GAMING DESIGN</span>
+
+                </div>
+
+                <div class="portfolio-showcase-content">
+
+                    <span class="project-category">
+                        THUMBNAIL DESIGN
+                    </span>
+
+                    <h3>Gaming Thumbnail</h3>
+
+                    <p>
+                        A creative gaming thumbnail
+                        concept for digital content
+                        and video presentation.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Thumbnail</span>
+                        <span>Creative Design</span>
+                        <span>Gaming</span>
+                    </div>
+
+                </div>
+            </article>
+
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <p id="noPortfolioResults"
+            class="portfolio-empty-message no-portfolio-results"
+            hidden>
+
+            <i class="fas fa-folder-open"></i>
+
+            No projects found. Please try another search.
+
+        </p>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+
+    <section class="portfolio-page-cta">
+
+        <i class="fas fa-rocket"></i>
+
+        <h2>
+            Let's Create Something
+            <span>Amazing.</span>
+        </h2>
+
+        <p>
+            Have an idea or want to connect?
+            Feel free to get in touch.
+        </p>
+
+        <a href="contact.html">
+            Contact Me
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </section>
+
+
+    <!-- IMAGE PREVIEW MODAL -->
+
+    <div id="portfolioModal" class="portfolio-modal">
+
+        <span class="portfolio-close"
+            role="button"
+            aria-label="Close preview">
+            &times;
+        </span>
+
+        <img
+            id="portfolioModalImage"
+            src=""
+            alt="Portfolio Preview"
+        >
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="portfolio-page-footer">
+        <p>© 2026 FM NABIL. All Rights Reserved.</p>
+    </footer>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
